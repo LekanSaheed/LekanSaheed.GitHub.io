@@ -312,7 +312,7 @@ li{
 	top:0;
 	width:100%;
 	background-color: white;
-	box-shadow: 0 0 15px 	grey;
+	box-shadow: 0 0 15px black;
 
 }
 .sticky + #myheader{
