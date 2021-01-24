@@ -42,9 +42,9 @@
 			<li><a href="#">HOME</a></li>
 			<li><a href="#">ABOUT</a></li>
 			<li><a href="#">CONTACT</a></li>
-			<li><a href="#">SERVICE</a></u vli>
+			<li><a href="#">SERVICE</a></li>
 		</ul>
-		<button type="button" class="btn">SIGN UP</button>
+		<button style="margin-top:50vh; float:right; color:white;" type="button" class="btn">Admin Login</button>
 		</div>
 		<i class="fa fa-bars"></i>
 		</div>
@@ -75,8 +75,7 @@
 </div>
 <div class="About">
 <p>
-<h2 style="font-family:">Who we are</h2><span class="compText">DOATV</span>  is an online marketplace and SaaS 
-platform for digital out of homes <span class="compText">(OOH)</span> display board for the purpose of advertising, broadcasting and entertainment, with a focus on simplifying the planning and booking of  <span class="compText">OOH</span>  display boards, thereby supercharging its efficiency and connectivity.<span class="compText"> DOATV</span> mobile app effectively connect Users (brand/media owners)to <span class="compText">OOH</span> boards, creating new market opportunities.
+<h2 style="font-family:">Who we are</h2><span class="compText">DOATV</span>  is an online marketplace and SaaS platform for digital out of homes <span class="compText">(OOH)</span> display board for the purpose of advertising, broadcasting and entertainment, with a focus on simplifying the planning and booking of  <span class="compText">OOH</span>  display boards, thereby supercharging its efficiency and connectivity.<span class="compText"> DOATV</span> mobile app effectively connect Users (brand/media owners)to <span class="compText">OOH</span> boards, creating new market opportunities.
 </p></div><br><br>
 <!--Ends here-->
  
@@ -91,11 +90,6 @@ platform for digital out of homes <span class="compText">(OOH)</span> display bo
  
 <!--About starts here-->
 
-<div class="About">
-<p>
- <span class="compText">DOATV</span>  is an online marketplace and SaaS <br>
-platform for digital out of homes <span class="compText">(OOH)</span> display <br>board for the purpose of advertising, broadcasting and entertainment, with a focus on simplifying the planning and booking of  <span class="compText">OOH</span>  display boards, thereby supercharging its efficiency and connectivity.<span class="compText"> DOATV</span> mobile app effectively connect Users (brand/media owners)to <span class="compText">OOH</span> boards, creating new market opportunities.
-</p><br><br>
 
 <h2>Digital outdoor media display we offer</h2>
 <ul style="padding:10px; border-top: solid 3px dodgerblue; border-bottom:solid 3px dodgerblue; font-size:15pt;">
@@ -127,12 +121,14 @@ platform for digital out of homes <span class="compText">(OOH)</span> display <b
 <div class="cards">
 <h2> <span class="compText">CAMPAIGN</span> </h2><br>
 Run effective campaigns, get discovered easily using <span class="compText">#</span>hastags.<span class="compText">DOATV</span> can help you Generate a lot of positive attention online and offline. By pairing a campaign with strong social sharing factor and implementing innovative design in your creative, you can make your campaign go viral with a small budget<br>
+<img height="250" width="100%" src="https://s1.imghub.io/KjaUd.png" alt="undraw Email campaign re m6k5 2" border="0">
 </div>
 
 <div class="cards"> <span class="compText">
 <h2>CREATE GOOD STORYTELLING WITH DOATV </h2></span><br>
 Storytelling is a fantastic technique for marketers because it mixes two things that people love: stories, and solutions to problems. Your product solves a problem—why not tell it in a story?<br>
 <br>
+<img height="250" width="100%" src="https://s1.imghub.io/KjbQu.png" alt="undraw News re 6uub" border="0">
 </div>
 
 </div>
@@ -145,7 +141,12 @@ Storytelling is a fantastic technique for marketers because it mixes two things 
 <div class="download">
 <i class="fa fa-android"></i>
 <span class="iconText">Android</span>
-</div></div</div>
+</div>
+<div class="download">
+<i class="fa fa-windows"></i>
+<span class="iconText"><i class="fa fa-apple"></i><i class="fa fa-linux"></i>Desktop</span>
+</div>
+</div</div>
 		<footer class="footer-distributed">
  
 		<div class="footer-left">
@@ -227,239 +228,6 @@ $(window).load(function() {
 });
 </script>
 		<script>
-
-let tension = 700,
-friction = 15
-
-$(document).ready(function(){
-$(".fa-close").on("click", function(){
-	  $(".nav-links").velocity({
-		  marginRight:"-70%"
-	  },
-		  609,[tension, friction])
-});
-  $(".fa-bars").on("click", function(){
-	  $(".nav-links").velocity({
-		  marginRight:"70%"
-	  },
-		  609,[tension, friction])
-});
-
-});
-
-function close(){
-	var navClose = document.getElementById("nav-links");
-	navClose.style="margin-left:-70%"
-}
-
-var header = document.getElementById("top");
-var sticky = header.offsetTop;
-
-function myFunction(){
-
-
-	if(window.pageYOffset > sticky)
-	{header.classList.add("sticky");
-	}
-	else{header.classList.remove("sticky");			
-		   
-	}
-};
-
-// Code By Webdevtrick ( https://webdevtrick.com )
-$(document).ready(function () {
-  const $cont = $('.container');
-  const $slider = $('.slider');
-  const $nav = $('.nav');
-  const winW = $(window).width();
-  const animSpd = 750;
-  const distOfLetGo = winW * 0.2;
-  let curSlide = 1;
-  let animation = false;
-  let autoScrollVar = true;
-  let diff = 0;
- 
-  // Generating slides
-  let arrCities = ['Boardings', 'Metropole', 'Kiosk	Ads', 'Unipole', 'Flyovers'];
-  let numOfCities = arrCities.length;
-  let arrCitiesDivided = [];
- 
-  arrCities.map(city => {
-	let length = city.length;
-	let letters = Math.floor(length / 4);
-	let exp = new RegExp(".{1," + letters + "}", "g");
- 
-	arrCitiesDivided.push(city.match(exp));
-  });
- 
-  let generateSlide = function (city) {
-	let frag1 = $(document.createDocumentFragment());
-	let frag2 = $(document.createDocumentFragment());
-	const numSlide = arrCities.indexOf(arrCities[city]) + 1;
-	const firstLetter = arrCitiesDivided[city][0].charAt(0);
- 
-	const $slide =
-	$(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
-		<div class="slide__darkbg slide--${numSlide}__darkbg"></div>
-		<div class="slide__text-wrapper slide--${numSlide}__text-wrapper"></div>
-		</div>`);
- 
-	const letter =
-	$(`<div class="slide__letter slide--${numSlide}__letter">
-		${firstLetter}
-		</div>`);
- 
-	for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
-	  const text =
-	  $(`<div class="slide__text slide__text--${i + 1}">
-		${arrCitiesDivided[city][i]}
-		</div>`);
-	  frag1.append(text);
-	}
- 
-	const navSlide = $(`<li data-target="${numSlide}" class="nav__slide nav__slide--${numSlide}"></li>`);
-	frag2.append(navSlide);
-	$nav.append(frag2);
- 
-	$slide.find(`.slide--${numSlide}__text-wrapper`).append(letter).append(frag1);
-	$slider.append($slide);
- 
-	if (arrCities[city].length <= 4) {
-	  $('.slide--' + numSlide).find('.slide__text').css("font-size", "12vw");
-	}
-  };
- 
-  for (let i = 0, length = numOfCities; i < length; i++) {
-	generateSlide(i);
-  }
- 
-  $('.nav__slide--1').addClass('nav-active');
- 
-  // Navigation
-  function bullets(dir) {
-	$('.nav__slide--' + curSlide).removeClass('nav-active');
-	$('.nav__slide--' + dir).addClass('nav-active');
-  }
- 
-  function timeout() {
-	animation = false;
-  }
- 
-  function pagination(direction) {
-	animation = true;
-	diff = 0;
-	$slider.addClass('animation');
-	$slider.css({
-	  'transform': 'translate3d(-' + (curSlide - direction) * 100 + '%, 0, 0)' });
- 
- 
-	$slider.find('.slide__darkbg').css({
-	  'transform': 'translate3d(' + (curSlide - direction) * 50 + '%, 0, 0)' });
- 
- 
-	$slider.find('.slide__letter').css({
-	  'transform': 'translate3d(0, 0, 0)' });
- 
- 
-	$slider.find('.slide__text').css({
-	  'transform': 'translate3d(0, 0, 0)' });
- 
-  }
- 
-  function navigateRight() {
-	if (!autoScrollVar) return;
-	if (curSlide >= numOfCities) return;
-	pagination(0);
-	setTimeout(timeout, animSpd);
-	bullets(curSlide + 1);
-	curSlide++;
-  }
- 
-  function navigateLeft() {
-	if (curSlide <= 1) return;
-	pagination(2);
-	setTimeout(timeout, animSpd);
-	bullets(curSlide - 1);
-	curSlide--;
-  }
- 
-  function toDefault() {
-	pagination(1);
-	setTimeout(timeout, animSpd);
-  }
- 
-  // Events
-  $(document).on('mousedown touchstart', '.slide', function (e) {
-	if (animation) return;
-	let target = +$(this).attr('data-target');
-	let startX = e.pageX || e.originalEvent.touches[0].pageX;
-	$slider.removeClass('animation');
- 
-	$(document).on('mousemove touchmove', function (e) {
-	  let x = e.pageX || e.originalEvent.touches[0].pageX;
-	  diff = startX - x;
-	  if (target === 1 && diff < 0 || target === numOfCities && diff > 0) return;
- 
-	  $slider.css({
-		'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)' });
- 
- 
-	  $slider.find('.slide__darkbg').css({
-		'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)' });
- 
- 
-	  $slider.find('.slide__letter').css({
-		'transform': 'translate3d(' + diff / 60 + 'vw, 0, 0)' });
- 
- 
-	  $slider.find('.slide__text').css({
-		'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)' });
- 
-	});
-  });
- 
-  $(document).on('mouseup touchend', function (e) {
-	$(document).off('mousemove touchmove');
- 
-	if (animation) return;
- 
-	if (diff >= distOfLetGo) {
-	  navigateRight();
-	} else if (diff <= -distOfLetGo) {
-	  navigateLeft();
-	} else {
-	  toDefault();
-	}
-  });
- 
-  $(document).on('click', '.nav__slide:not(.nav-active)', function () {
-	let target = +$(this).attr('data-target');
-	bullets(target);
-	curSlide = target;
-	pagination(1);
-  });
- 
-  $(document).on('click', '.side-nav', function () {
-	let target = $(this).attr('data-target');
- 
-	if (target === 'right') navigateRight();
-	if (target === 'left') navigateLeft();
-  });
- 
-  $(document).on('keydown', function (e) {
-	if (e.which === 39) navigateRight();
-	if (e.which === 37) navigateLeft();
-  });
- 
-  $(document).on('mousewheel DOMMouseScroll', function (e) {
-	if (animation) return;
-	let delta = e.originalEvent.wheelDelta;
- 
-	if (delta > 0 || e.originalEvent.detail < 0) navigateLeft();
-	if (delta < 0 || e.originalEvent.detail > 0) navigateRight();
-  });
-});
-
 		  var show = document.getElementById("nav-links");
  
 function showMenu(){
