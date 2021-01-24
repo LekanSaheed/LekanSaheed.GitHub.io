@@ -6,17 +6,57 @@
 }
 body{
 	font-family: 'Lato', sans-serif;
-	color:#888888;
 }
+.About{
+	padding:10px;
+	font-size:15pt;
+	font-weight:light;
+	font-family: 'Mukta', sans-serif;
+}
+.compText{
+    color:dodgerblue;
+    font-weight:bolder;
+}
+.cardContainer{
+	background-color: ;
+	padding:20px;
+}
+.cards{
+	padding: 10px;
+	color:black;
+	border:solid 1px none ;
+	border-radius:10px;
+	width:100%;
+	background-color: white;
+	margin-bottom: 30px;
+	font-family: 'Mukta', sans-serif;
+	padding: 15px;
+}
+.cards h2{
 	
+	font-weight: bolder;
+	border-bottom: solid 5px dodgerblue;
+	
+}
+	.cards:hover{
+	    transition:1s;
+	    background-color: whitesmoke;
+	}
 h1 span{
 	color: #58BFFF;
+}
+.download{
+	background-color: black;
+	border-radius:2px;
+	margin-bottom: 10px;
+	max-width:100%;
+	padding:10px;
 }
 .info{
 	padding:10px;
 }
 .hero{
-	height:150vh;
+	height:100vh;
 	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)),url("https://s1.imghub.io/0g5Oy.jpg");
 	background-position: center;
 	background-size:cover;
@@ -46,7 +86,7 @@ img{
 }
 .nav-logo .img{
 	width:135px;
-	color:#58BFFF;
+	color:#292c2f;
 	font-weight:bolder;
 }
 .nav-links{
@@ -309,11 +349,7 @@ footer{
 	margin-bottom: 5px;
 }
 
-.About{
-	padding:10px;
-	font-weight:light;
-	font-family: 'Montserrat', sans-serif;
-}
+
 .container {
   position: relative;
   height: 100vh;
@@ -613,6 +649,7 @@ footer{
 		 position: absolute;
 		 text-align:left;
 		 z-index: 2;
+		 box-shadow: 0px -5px 8px grey;
 		
 	 }
 	 .nav-links ul li a{
@@ -621,9 +658,11 @@ footer{
 	 .sticky{
 	position:fixed;
 	top:0;
+	
 	width:100%;
 	background-color: white;
-	box-shadow: 0 0 13px 	black;
+	box-shadow: 0 0 8px 	grey;
+	z-index:30;
 
 }
 .sticky + #myheader{
