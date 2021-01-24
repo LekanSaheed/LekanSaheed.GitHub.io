@@ -14,8 +14,8 @@ body{
 	font-family: 'Mukta', sans-serif;
 }
 .compText{
-    color:dodgerblue;
-    font-weight:bolder;
+	color:dodgerblue;
+	font-weight:bolder;
 }
 .cardContainer{
 	background-color: ;
@@ -39,8 +39,8 @@ body{
 	
 }
 	.cards:hover{
-	    transition:1s;
-	    background-color: whitesmoke;
+		transition:1s;
+		background-color: whitesmoke;
 	}
 h1 span{
 	color: #58BFFF;
@@ -411,6 +411,9 @@ footer{
 .slide--5 {
   left: 400%;
 }
+.slide--6 {
+  left: 500%;
+}
 .slide__darkbg {
   position: absolute;
   width: 100%;
@@ -589,7 +592,30 @@ footer{
   background-position: 0px center, 0px center;
   background-size: cover;
 }
- 
+
+ .slide--6__darkbg {
+  left: -200%;
+  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg") center center no-repeat;
+  background-size: cover;
+  background-position: 0px center, 0px center;
+  -webkit-transform: translate3d(0, 0, 0);
+		  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.slide--6__darkbg:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.83);
+}
+.slide--6__letter {
+  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg") center center no-repeat;
+  background-position: 0px center, 0px center;
+  background-size: cover;
+}
 .nav {
   position: absolute;
   bottom: 25px;
@@ -649,7 +675,7 @@ footer{
 		 position: absolute;
 		 text-align:left;
 		 z-index: 2;
-		 box-shadow: 0px -5px 8px grey;
+		 box-shadow: 0px -1px 1px grey;
 		
 	 }
 	 .nav-links ul li a{
