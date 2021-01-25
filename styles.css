@@ -56,7 +56,7 @@ h1 span{
 	padding:10px;
 }
 .hero{
-	height:100vh;
+	height:90vh;
 	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)),url("https://s1.imghub.io/0g5Oy.jpg");
 	background-position: center;
 	background-size:cover;
@@ -108,9 +108,10 @@ li{
 }
 
 .nav-links ul a{
+	font-weight: bolder;
 	color:dodgerblue;
 	text-decoration: none;
-	font-size:13px;
+	font-size:50px;
 }
 
 .nav-links ul li::after{
@@ -170,7 +171,7 @@ li{
 .social-icons{
 	height: 35%;
 	width: 80px;
-	background-color: yellow;
+	background-color: dodgerblue;
 	text-align:center;
 	padding-top: 27%;
 	bottom: 0;
@@ -204,7 +205,7 @@ li{
 	max-height: 550px;;
 	background-color: #292c2f;
 	color: white;
-	font-size: 38pt;
+	font-size: 20pt;
 	text-align: center;
 	line-height: 550px;
 }
@@ -636,6 +637,10 @@ footer{
   cursor: pointer;
 }
 @media (max-width:880px){
+
+	.hero{
+		height:100vh;
+	}
 	.vertical-bar{
 		display:none;
 	}
