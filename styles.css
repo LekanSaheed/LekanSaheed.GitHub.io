@@ -70,8 +70,8 @@ h1 span{
 	padding:10px;
 }
 .hero{
-        background-image:none;
-        background:none;
+background-image:none;
+height:none;
 	color:black;
 }
 img{
