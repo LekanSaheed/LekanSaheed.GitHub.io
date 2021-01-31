@@ -8,8 +8,9 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 .About{
+text-align:justify;
 	padding:10px;
-	font-size:15pt;
+	font-size:12pt;
 	font-weight:light;
 	font-family: 'Mukta', sans-serif;
 }
@@ -18,25 +19,37 @@ body{
 	font-weight:bolder;
 }
 .cardContainer{
+margin-top:100vh;
 	background-color: ;
-	padding:20px;
+	padding:0;
+	display: grid;
+	display: grid;
+   grid-gap: 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   grid-gap:1rem;
+   align-items:center;
+   justify-items:center;
+   text-align:justify;
 }
 .cards{
-	padding: 10px;
+	padding: 0px;
 	color:black;
 	border:solid 1px none ;
 	border-radius:10px;
 	width:100%;
 	background-color: white;
 	margin-bottom: 30px;
-	font-size:16pt;
+	font-size:14pt;
 	font-family: 'Mukta', sans-serif;
 	padding: 15px;
 }
+.cards img{
+	width:100%;
+}
 .cards h2{
 	
-	font-weight: bolder;
-	border-bottom: solid 5px dodgerblue;
+	font-weight: light;
+	border-bottom: solid 2px dodgerblue;
 	
 }
 	.cards:hover{
@@ -92,6 +105,7 @@ img{
 }
 .nav-links{
 	flex:1;
+	
 }
 
 .nav-links ul{
@@ -110,7 +124,7 @@ li{
 
 .nav-links ul a{
 	font-weight: bolder;
-	color:dodgerblue;
+	color:white;
 	text-decoration: none;
 	font-size:50px;
 }
@@ -487,14 +501,14 @@ footer{
 		 position: absolute;
 		 right:20px;
 		 top:10px;
-		 color:white;
+		 color:dodgerblue;
 	 } 
 	 .colChange{
 		 color:black;
 	 }
 	 .nav-bar .fa{
 		 display: block;
-		 color:white;
+		 color:dodgerblue;
 		 margin:10px 25px;
 		 font-size: 22px;
 		 cursor:pointer;
@@ -514,6 +528,7 @@ footer{
 	 }
 	 .nav-links ul li a{
 		 font-size:15pt;
+		 color:dodgerblue;
 	 }
 	 .sticky{
 	position:fixed;
@@ -565,5 +580,5 @@ footer{
 		line-height: normal;
 		font-size: auto;
 	}
-	}
+}
 	
