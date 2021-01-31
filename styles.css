@@ -123,13 +123,13 @@ li{
 
 .nav-links ul a{
 	font-weight: bolder;
-	color:white;
+	color:black;
 	text-decoration: none;
 	font-size:30px;
 	border:solid 1px dodgerblue;
 	background-color: dodgerblue;
 	padding:10px;
-	margin-right: 10px;
+	margin-right: 30px;
 }
 
 .nav-links ul li::after{
