@@ -71,7 +71,7 @@ h1 span{
 }
 .hero{
 background-image:none;
-height:none;
+height:50vh;
 	color:black;
 }
 img{
