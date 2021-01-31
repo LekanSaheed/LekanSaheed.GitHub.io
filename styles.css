@@ -71,6 +71,7 @@ h1 span{
 }
 .hero{
 	color:black;
+        background:none;
 }
 img{
 	border-radius:10px;
