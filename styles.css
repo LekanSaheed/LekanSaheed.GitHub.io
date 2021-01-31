@@ -70,7 +70,6 @@ h1 span{
 	padding:10px;
 }
 .hero{
-	height:100vh;
 	background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)),url("https://s1.imghub.io/KIbCX.md.jpg");
 	background-position: center;
 	background-size:cover;
@@ -127,9 +126,10 @@ li{
 	color:white;
 	text-decoration: none;
 	font-size:30px;
-        border:solid 1px dodgerblue;
-        background:dodgerblue;
-        padding:10px;
+	border:solid 1px dodgerblue;
+	background-color: dodgerblue;
+	padding:10px;
+	margin-right: 10px;
 }
 
 .nav-links ul li::after{
@@ -532,9 +532,11 @@ footer{
 	 .nav-links ul li a{
 		 font-size:15pt;
 		 color:dodgerblue;
-border:none;
-padding:none;
-background:none;
+		 border:none;
+		 padding:none;
+		 background: none;
+		 margin-right: none;
+		 
 	 }
 	 .sticky{
 	position:fixed;
