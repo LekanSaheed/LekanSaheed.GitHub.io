@@ -1,5 +1,75 @@
-let tension = 700,
-friction = 15
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *	 the user visible viewport of a web browser.
+   *	 only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+	
+	  var $t			= $(this),
+		  $w			= $(window),
+		  viewTop	   = $w.scrollTop(),
+		  viewBottom	= viewTop + $w.height(),
+		  _top		  = $t.offset().top,
+		  _bottom	   = _top + $t.height(),
+		  compareTop	= partial === true ? _bottom : _top,
+		  compareBottom = partial === true ? _top : _bottom;
+	
+	return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+	
+})(jQuery);
+
+
+
+$(window).scroll(function(event) {
+  
+  $(".cards").each(function(i, el) {
+	var el = $(el);
+	if (el.visible(true)) {
+	  el.addClass("come-in"); 
+		 
+	} 
+  });
+  
+});
+
+
+var win = $(window);
+var allCards = $(".cards");
+
+// Already visible modules
+allCards.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+	el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allCards.each(function(i, el) {
+	var el = $(el);
+	if (el.visible(true)) {
+	  el.addClass("come-in"); 
+	} 
+  });
+  
+});
+
+
+
+
+let tension = 1000,
+friction = 50
 
 $(document).ready(function(){
 $(".fa-close").on("click", function(){
@@ -10,7 +80,7 @@ $(".fa-close").on("click", function(){
 });
   $(".fa-bars").on("click", function(){
 	  $(".nav-links").velocity({
-		  marginRight:"70%"
+		  marginRight:"80%"
 	  },
 		  609,[tension, friction])
 });
@@ -31,6 +101,7 @@ function myFunction(){
 
 	if(window.pageYOffset > sticky)
 	{header.classList.add("sticky");
+	$(".sticky").slideDown(3000);
 	}
 	else{header.classList.remove("sticky");			
 		   
