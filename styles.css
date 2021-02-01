@@ -14,14 +14,28 @@ text-align:justify;
 	font-weight:light;
 	font-family: 'Mukta', sans-serif;
 }
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
 .compText{
 	color:dodgerblue;
-	font-weight:bolder;
+	font-weight:bold;
 }
 .cardContainer{
 margin-top:100vh;
-	background-color: ;
-	padding:0;
+	background-color: #f3f5fb;
+	padding:30px;
 	display: grid;
 	display: grid;
    grid-gap: 1rem;
@@ -32,30 +46,30 @@ margin-top:100vh;
    text-align:justify;
 }
 .cards{
-	padding: 0px;
+	box-shadow:0 5px 40px -30px grey;
+	padding: 20px;
 	color:black;
 	border:solid 1px none ;
 	border-radius:10px;
 	width:100%;
 	background-color: white;
 	margin-bottom: 30px;
-	font-size:14pt;
+	font-size:10pt;
 	font-family: 'Mukta', sans-serif;
 	padding: 15px;
 }
 .cards img{
 	width:100%;
+	border:solid 1px goldenrod;
 }
 .cards h2{
-	
-	font-weight: light;
-	border-bottom: solid 2px dodgerblue;
+	text-align:left;
+	font-weight: bolder;
+	font-size:18pt;
+	color:black;
+	dborder-bottom: solid 2px dodgerblue;
 	
 }
-	.cards:hover{
-		transition:1s;
-		background-color: whitesmoke;
-	}
 h1 span{
 	color: #58BFFF;
 }
@@ -71,7 +85,7 @@ h1 span{
 }
 .hero{
 background-image:none;
-height:50vh;
+height:none;
 	color:black;
 }
 img{
@@ -237,7 +251,7 @@ li{
 .compText h2{
 	font-weight: bold;
 	font-size:18pt;
-	font-family: Helvetica;
+	font-family:  Sans-serif;
 }
 #coverflow {
 	height: 100%;
@@ -522,10 +536,10 @@ footer{
 	 .nav-links{
 	 	 font-size:20pt;
 		 height:100vh;
-		 width: 70%;
-		 background:white;
+		 width: 80%;
+		 background:#f3f5fb;
 		 top:0;
-		 right:-70%;
+		 right:-80%;
 		 position: absolute;
 		 text-align:left;
 		 z-index: 2;
@@ -534,7 +548,7 @@ footer{
 	 }
 	 .nav-links ul li a{
 		 font-size:15pt;
-		 color:dodgerblue;
+		 color:goldenrod;
 		 border:none;
 		 padding:none;
 		 background: none;
@@ -546,10 +560,11 @@ footer{
 	top:0;
 	color:black;
 	width:100%;
-	border-bottom:solid 2px dodgerblue;
+	yborder-bottom:solid 2px dodgerblue;
 	background-color: white;
-	fbox-shadow: 0 0 8px 	dodgerblue;
+	box-shadow: 0 0 30px -20px black;
 	z-index:30;
+	etransition:.3s;
 
 }
 .sticky + #myheader{
