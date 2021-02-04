@@ -80,7 +80,7 @@ $(".fa-close").on("click", function(){
 });
   $(".fa-bars").on("click", function(){
 	  $(".nav-links").velocity({
-		  marginRight:"80%"
+		  marginRight:"69%"
 	  },
 		  609,[tension, friction])
 });
