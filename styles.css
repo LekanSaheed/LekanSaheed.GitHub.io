@@ -7,10 +7,19 @@
 body{
 	font-family: 'Lato', sans-serif;
 }
+.overlay{
+	background:rgba(0,0,0,.7);
+	position: absolute;
+	height:100vh;
+	width: 100%;
+	padding: 20px;
+	z-index:1;
+}
 .postText{
-	font-size:13pt;
-	color: black;
+	font-size:16pt;
+	color: white;
 	margin-top:1px;
+	font-family: 'Mukta', sans-serif;
 }
 .About{
 text-align:justify;
@@ -39,8 +48,8 @@ text-align:justify;
 		
   animation-duration:0.6s;
    -webkit-animation-duration:0.6s;
-     -moz-animation-duration:0.6s;
-       -o-animation-duration:0.6s;
+	 -moz-animation-duration:0.6s;
+	   -o-animation-duration:0.6s;
   /* So they look staggered */
 }
 .already-visible {
@@ -70,7 +79,7 @@ margin-top:100vh;
 	display: grid;
 	display: grid;
    grid-gap: 1rem;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
    grid-gap:1rem;
    align-items:center;
    justify-items:center;
@@ -91,7 +100,7 @@ margin-top:100vh;
 }
 .cards img{
 	width:100%;
-	border:solid 1px goldenrod;
+	border:solid 1px lightblue;
 }
 .cards h2{
 	text-align:left;
@@ -115,9 +124,14 @@ h1 span{
 	padding:10px;
 }
 .hero{
-background-image:none;
-height:none;
+background-image: linear-gradient(rgba(30,144,255,.3), rgba(0,0,0,.7)),url("https://s1.imghub.io/d4uEt.jpg");
+height:70vh;
 	color:black;
+	background-size:cover;
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
 }
 img{
 	border-radius:10px;
@@ -287,7 +301,7 @@ li{
 #coverflow {
 	height: 100%;
 	width: 100%;
- background-color: #efefef;
+ background-color: black;
 	-webkit-perspective: 600px;
 }
 #coverflow h2{
@@ -524,11 +538,9 @@ footer{
 @media (max-width:880px){
 
 	.hero{
-		height:100vh;
 		/*background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)),url("https://s1.imghub.io/KIbCX.md.jpg");
 	background-position: center;
 	background-size:cover;*/
-	overflow-x: hidden;
 	position: relative;
 	}
 	.vertical-bar{
@@ -539,7 +551,7 @@ footer{
 	}
 	  .banner-title h1{
 		  font-size: 25pt;
-		  color:#05023B;
+		  color:white;
 		  font-weight:light;
 	  }
 	 .notifications{
